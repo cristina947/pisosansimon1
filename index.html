@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia Exclusiva de Venta | Angel - Calle San Simón 7</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fuchsiaCorp: '#dd116f',
+                        fuchsiaHover: '#b50d59',
+                        fuchsiaLight: '#fdf0f6',
+                        creamLight: '#fdfbf7',
+                        creamCard: '#f4efe6',
+                        charcoal: '#222222',
+                        slateDark: '#1c1b20'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdfbf7;
+            color: #222222;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(28, 27, 32, 0.78) 0%, rgba(28, 27, 32, 0.92) 100%);
+        }
+        .luxury-shadow {
+            box-shadow: 0 15px 35px -5px rgba(221, 17, 111, 0.08), 0 5px 15px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased text-charcoal bg-creamLight">
+
+    <!-- 1. Header / Navegación -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand / Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-fuchsiaCorp flex items-center justify-center text-white font-serif font-bold text-xl shadow-md">
+                    CR
+                </div>
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-fuchsiaCorp font-semibold block">Asesora Inmobiliaria</span>
+                    <span class="font-serif font-bold text-base sm:text-lg text-charcoal">Cristina Ruitiña</span>
+                </div>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="hidden lg:flex space-x-8 text-xs font-semibold uppercase tracking-wider text-gray-600">
+                <a href="#ficha" class="hover:text-fuchsiaCorp transition-colors">Inmueble</a>
+                <a href="#valoracion" class="hover:text-fuchsiaCorp transition-colors">Valoración</a>
+                <a href="#comparativa" class="hover:text-fuchsiaCorp transition-colors">Mercado</a>
+                <a href="#roadmap" class="hover:text-fuchsiaCorp transition-colors">Plan de Venta</a>
+                <a href="#marketing" class="hover:text-fuchsiaCorp transition-colors">Marketing Invisible</a>
+            </nav>
+
+            <!-- Quick Contact Button -->
+            <div class="flex items-center space-x-2">
+                <a href="tel:659655159" class="bg-fuchsiaCorp hover:bg-fuchsiaHover text-white px-4 sm:px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="hidden sm:inline">Llamar a Cristina</span>
+                    <span class="sm:hidden">659 655 159</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Inmobiliaria de Lujo en Santander" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-fuchsia-300 text-xs uppercase tracking-widest mb-6">
+                <i class="fa-solid fa-gem text-xs"></i>
+                <span>Plan de Venta Exclusivo & Personalizado</span>
+            </div>
+            
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl mx-auto">
+                <span class="text-fuchsia-400">Angel,</span> así vamos a vender tu casa por un precio óptimo de mercado.
+            </h1>
+            
+            <p class="text-base sm:text-lg font-light text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed">
+                Estrategia integral de comercialización para tu propiedad ubicada en <strong class="text-white font-medium">Barrio San Simón 7, 4ª planta, Santander (39003)</strong>.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#valoracion" class="w-full sm:w-auto bg-fuchsiaCorp hover:bg-fuchsiaHover text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-fuchsiaCorp/50 hover:-translate-y-0.5">
+                    Ver Estudio de Valoración
+                </a>
+                <a href="#agente" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest backdrop-blur-sm transition-all">
+                    Contactar con Cristina
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Ficha Técnica / Destacados -->
+    <section id="ficha" class="py-16 bg-white relative z-20 -mt-10 max-w-6xl mx-auto rounded-3xl shadow-xl border border-gray-100 px-6 sm:px-12">
+        <div class="text-center mb-10">
+            <span class="text-fuchsiaCorp font-semibold text-xs tracking-widest uppercase block mb-1">Análisis de la Propiedad</span>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal">Ficha Técnica Exclusiva</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-6 rounded-2xl bg-creamCard/60 border border-creamCard hover:border-fuchsiaCorp/30 transition-all">
+                <div class="w-12 h-12 mx-auto mb-3 bg-fuchsiaCorp/10 text-fuchsiaCorp rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <p class="text-2xl font-bold font-serif text-charcoal">59 m²</p>
+                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider mt-1">Superficie Total</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-creamCard/60 border border-creamCard hover:border-fuchsiaCorp/30 transition-all">
+                <div class="w-12 h-12 mx-auto mb-3 bg-fuchsiaCorp/10 text-fuchsiaCorp rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+                <p class="text-2xl font-bold font-serif text-charcoal">1 Habitación</p>
+                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider mt-1">Con Vestidor & Despacho</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-creamCard/60 border border-creamCard hover:border-fuchsiaCorp/30 transition-all">
+                <div class="w-12 h-12 mx-auto mb-3 bg-fuchsiaCorp/10 text-fuchsiaCorp rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-bath"></i>
+                </div>
+                <p class="text-2xl font-bold font-serif text-charcoal">1 Baño</p>
+                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider mt-1">Totalmente Reformado</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-creamCard/60 border border-creamCard hover:border-fuchsiaCorp/30 transition-all">
+                <div class="w-12 h-12 mx-auto mb-3 bg-fuchsiaCorp/10 text-fuchsiaCorp rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <p class="text-2xl font-bold font-serif text-charcoal">4ª Planta</p>
+                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider mt-1">Año 1920 Reformado</p>
+            </div>
+        </div>
+
+        <div class="mt-8 p-4 bg-creamLight rounded-xl border border-creamCard text-center text-xs sm:text-sm text-gray-600 flex flex-wrap justify-center items-center gap-6">
+            <span><i class="fa-solid fa-location-dot text-fuchsiaCorp mr-2"></i><strong>Ubicación:</strong> Barrio San Simón 7, Santander (CP 39003)</span>
+            <span><i class="fa-solid fa-wand-magic-sparkles text-fuchsiaCorp mr-2"></i><strong>Estado:</strong> Segunda mano en muy buen estado reformado</span>
+        </div>
+    </section>
+
+    <!-- 4. Horquilla de Valoración Inmobiliaria -->
+    <section id="valoracion" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-fuchsiaCorp font-semibold text-xs tracking-widest uppercase block mb-2">Estimación Profesional</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mb-4">Horquilla de Valoración de Mercado</h2>
+            <p class="text-gray-600 text-sm">
+                Basándonos en la demanda activa de Santander y las características de tu inmueble reformado, hemos fijado la siguiente estrategia de precio.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- Mínimo -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 luxury-shadow text-center relative">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Valor Mínimo Aproximado</span>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-gray-700 mb-2">149.000 €</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Piso de salida rápida pero que acorta el margen de rentabilidad de tu reforma.</p>
+            </div>
+
+            <!-- Óptimo (Destacado) -->
+            <div class="bg-white p-8 rounded-3xl border-2 border-fuchsiaCorp luxury-shadow text-center relative transform md:-translate-y-2">
+                <div class="absolute top-0 right-0 bg-fuchsiaCorp text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1 rounded-bl-xl">
+                    Recomendado
+                </div>
+                <span class="text-xs font-bold text-fuchsiaCorp uppercase tracking-widest block mb-2">Precio Óptimo Recomendado</span>
+                <p class="font-serif text-4xl sm:text-5xl font-bold text-charcoal mb-2">150.000 €</p>
+                <p class="text-xs text-gray-600 leading-relaxed font-medium">
+                    Maximiza el valor de la propiedad atrayendo a compradores cualificados sin generar estancamiento.
+                </p>
+            </div>
+
+            <!-- Máximo -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 luxury-shadow text-center relative">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Valor Máximo Estimado</span>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-gray-700 mb-2">160.000 €</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Techo máximo para testear compradores con requerimientos de ubicación muy específicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Mapa Competitivo -->
+    <section id="comparativa" class="py-16 bg-white border-y border-gray-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-fuchsiaCorp font-semibold text-xs tracking-widest uppercase block mb-2">Estudio de Mercado</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mb-3">Mapa Competitivo en San Simón</h2>
+                <p class="text-gray-600 text-sm">Comparativa de inmuebles competidores activos en Santander (CP 39003).</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-creamCard/50 text-gray-500 text-[11px] uppercase tracking-wider border-b border-gray-200">
+                                <th class="py-4 px-6 font-semibold">Propiedad</th>
+                                <th class="py-4 px-6 font-semibold">Estado & Características</th>
+                                <th class="py-4 px-6 font-semibold">Precio</th>
+                                <th class="py-4 px-6 font-semibold">Posicionamiento</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm">
+                            <tr class="hover:bg-creamLight/40 transition-colors">
+                                <td class="py-4 px-6 font-medium text-gray-800">Competidor A (Zona San Simón)</td>
+                                <td class="py-4 px-6 text-gray-600">Reforma Antigua / Sin vestidor</td>
+                                <td class="py-4 px-6 font-semibold text-gray-700">149.000 €</td>
+                                <td class="py-4 px-6"><span class="px-3 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200">Necesita Inversión</span></td>
+                            </tr>
+                            <tr class="hover:bg-creamLight/40 transition-colors">
+                                <td class="py-4 px-6 font-medium text-gray-800">Competidor B (Entorno Centro)</td>
+                                <td class="py-4 px-6 text-gray-600">55 m² sin espacio de despacho</td>
+                                <td class="py-4 px-6 font-semibold text-gray-700">165.000 €</td>
+                                <td class="py-4 px-6"><span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Sobrepreciado</span></td>
+                            </tr>
+                            <tr class="bg-fuchsiaLight/50 border-l-4 border-l-fuchsiaCorp">
+                                <td class="py-5 px-6 font-bold text-charcoal">
+                                    <span class="text-fuchsiaCorp font-serif text-base">Piso de Angel (San Simón 7)</span>
+                                </td>
+                                <td class="py-5 px-6 font-medium text-gray-800">
+                                    Reformado + Vestidor & Despacho
+                                </td>
+                                <td class="py-5 px-6 font-bold text-fuchsiaCorp text-lg">150.000 €</td>
+                                <td class="py-5 px-6">
+                                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-fuchsiaCorp text-white shadow-sm">
+                                        Líder en Calidad / Precio
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Roadmap de Venta en 5 Pasos -->
+    <section id="roadmap" class="py-20 bg-creamCard/40 border-b border-creamCard">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-fuchsiaCorp font-semibold text-xs tracking-widest uppercase block mb-2">Proceso Transparente</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mb-3">Roadmap de Venta en 5 Pasos</h2>
+                <p class="text-gray-600 text-sm">Acompañamiento integral desde la valoración hasta la firma notarial.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <!-- Paso 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 luxury-shadow relative">
+                    <span class="w-8 h-8 rounded-full bg-fuchsiaCorp text-white font-bold flex items-center justify-center text-xs mb-4">1</span>
+                    <h3 class="font-serif font-bold text-base text-charcoal mb-2">Valoración & Precio</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Fijación de los 150.000 € óptimos según datos reales del mercado local.</p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 luxury-shadow relative">
+                    <span class="w-8 h-8 rounded-full bg-fuchsiaCorp text-white font-bold flex items-center justify-center text-xs mb-4">2</span>
+                    <h3 class="font-serif font-bold text-base text-charcoal mb-2">Papeleo & Legal</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Certificados, notas simples y auditoría documental para una venta sin sorpresas.</p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 luxury-shadow relative">
+                    <span class="w-8 h-8 rounded-full bg-fuchsiaCorp text-white font-bold flex items-center justify-center text-xs mb-4">3</span>
+                    <h3 class="font-serif font-bold text-base text-charcoal mb-2">Marketing Premium</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Reportaje fotográfico de alta gama, tour virtual y staging para resaltar la reforma.</p>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 luxury-shadow relative">
+                    <span class="w-8 h-8 rounded-full bg-fuchsiaCorp text-white font-bold flex items-center justify-center text-xs mb-4">4</span>
+                    <h3 class="font-serif font-bold text-base text-charcoal mb-2">Lanzamiento & Filtro</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Difusión en canales cerrados y selección de compradores solventes.</p>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 luxury-shadow relative">
+                    <span class="w-8 h-8 rounded-full bg-fuchsiaCorp text-white font-bold flex items-center justify-center text-xs mb-4">5</span>
+                    <h3 class="font-serif font-bold text-base text-charcoal mb-2">Cierre en Notaría</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Defensa de la oferta, redacción de arras y acompañamiento el día de la firma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Marketing Invisible -->
+    <section id="marketing" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-slateDark rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-2xl">
+            <div class="relative z-10 max-w-3xl mb-10">
+                <span class="text-fuchsia-400 font-semibold text-xs tracking-widest uppercase block mb-2">Ventaja Competitiva</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">El Valor del Marketing Invisible</h2>
+                <p class="text-gray-300 text-sm">Estrategias activas de captación y filtrado sin exponer innecesariamente tu vivienda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <div class="w-12 h-12 bg-fuchsiaCorp rounded-xl flex items-center justify-center text-white text-xl mb-4">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2">Ecosistema Red Afilia</h3>
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                        Tu piso se comparte con más de 30 agencias inmobiliarias colaboradoras de Cantabria, multiplicando los compradores potenciales manteniendo a Cristina Ruitiña como tu única interlocutora.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <div class="w-12 h-12 bg-fuchsiaCorp rounded-xl flex items-center justify-center text-white text-xl mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2">Filtro de Solvencia Previa</h3>
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                        Validamos la capacidad financiera de los interesados antes de agendar visitas en San Simón 7, protegiendo tu privacidad y garantizando solo visitas cualificadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Sección Agente Dedicada & Contacto Directo -->
+    <section id="agente" class="py-20 bg-creamLight">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 luxury-shadow border border-gray-100 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <!-- Foto / Perfil Agente -->
+                <div class="md:col-span-5 text-center">
+                    <div class="w-36 h-36 mx-auto rounded-full bg-fuchsiaLight p-1.5 border-2 border-fuchsiaCorp mb-4 shadow-md">
+                        <div class="w-full h-full rounded-full bg-slateDark flex items-center justify-center text-white font-serif font-bold text-3xl">
+                            CR
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-charcoal">Cristina Ruitiña</h3>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-fuchsiaCorp mt-1">Especialista Inmobiliaria de Lujo</p>
+                    <p class="text-xs text-gray-500 mt-2">Atención dedicada para la vivienda de Angel</p>
+                </div>
+
+                <!-- Detalles de Contacto / Formulario -->
+                <div class="md:col-span-7">
+                    <h4 class="font-serif text-xl font-bold text-charcoal mb-3">Angel, coordinemos los siguientes pasos</h4>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-6">
+                        Ponte en contacto directamente con Cristina para revisar el plan comercial o agendar la firma del encargo de venta.
+                    </p>
+
+                    <!-- Botones Rápidos de Contacto -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                        <a href="tel:659655159" class="bg-fuchsiaCorp hover:bg-fuchsiaHover text-white p-3.5 rounded-xl text-xs font-bold uppercase tracking-wider text-center transition-all flex items-center justify-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-phone text-sm"></i>
+                            <span>659 655 159</span>
+                        </a>
+                        <a href="https://wa.me/34659655159?text=Hola%20Cristina,%20soy%20Angel.%20He%20revisado%20la%20propuesta%20para%20mi%20piso%20de%20San%20Sim%C3%B3n%207." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white p-3.5 rounded-xl text-xs font-bold uppercase tracking-wider text-center transition-all flex items-center justify-center gap-2 shadow-sm">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>Enviar WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Formulario de Reunión -->
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-3">
+                        <div>
+                            <input type="text" value="Angel - San Simón 7, 4º (Santander)" readonly class="w-full px-4 py-2.5 bg-creamCard/40 border border-creamCard rounded-xl text-xs font-semibold text-charcoal focus:outline-none">
+                        </div>
+                        <div>
+                            <textarea id="mensaje" rows="2" placeholder="Escribe tu disponibilidad u observación para Cristina..." class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-xs focus:ring-2 focus:ring-fuchsiaCorp focus:outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-slateDark hover:bg-black text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all">
+                            Confirmar Reunión con Cristina
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-3 p-3 bg-fuchsiaLight text-fuchsiaCorp border border-fuchsiaCorp/20 rounded-xl text-xs text-center font-semibold">
+                        ¡Mensaje enviado con éxito! Cristina te contactará en breve al 659655159.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="bg-white border-t border-gray-100 py-8 text-center text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-serif text-sm font-semibold text-charcoal mb-1">Cristina Ruitiña · Marketing Inmobiliario de Lujo</p>
+            <p>© 2026 Propuesta de Comercialización Exclusiva para Angel | Barrio San Simón 7, Santander</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('form-success').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
